@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreGraphics/CGBase.h>
 
 typedef void(^TWRDownloadRemainingTimeBlock)(NSUInteger seconds);
 typedef void(^TWRDownloadProgressBlock)(CGFloat progress);
@@ -21,7 +20,6 @@ typedef void(^TWRDownloadCompletionBlock)(BOOL completed);
 
 @property (strong, nonatomic) NSURLSessionDownloadTask *downloadTask;
 @property (copy, nonatomic) NSString *fileName;
-@property (copy, nonatomic) NSString *friendlyName;
 @property (copy, nonatomic) NSString *directoryName;
 @property (copy, nonatomic) NSDate *startDate;
 
